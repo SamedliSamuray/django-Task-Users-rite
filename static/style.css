@@ -29,10 +29,13 @@ body{
     padding: 10px;
     margin: 10px;
     background-color:whitesmoke;
-    /* border: 2px solid forestgreen; */
     border-radius: 5px;
-    box-shadow: 1px 1px 4px 1px forestgreen;
+    transition: 0.5s;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.write:hover{
+    transform: scale(1.01);
+    background-color: rgb(225, 221, 221);
 }
 .write h3{
     font-style: italic;
