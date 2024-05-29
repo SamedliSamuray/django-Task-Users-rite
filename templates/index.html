@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title%}
+    <title>Home Page</title>
+{% endblock title%}
+
+{% block body%}
+    <h1 class="legend">Legends.net</h1>
+    <div class="users">
+    <ol>
+        <h2>Users</h2>
+        {%for user in users%}
+        <li class="write">
+            <h3>Müəllif : {{user.author}}</h3>
+            <h4>{{user.name}} {{user.surname}}</h4>
+            <p>Work : {{user.work}}</p>
+            <p>About : {{user.about}}</p>
+            <small>Added time :{{user.create_time}}</small>
+        </li>
+        {% endfor%}
+    </ol>
+</div>
+{% endblock body%}
