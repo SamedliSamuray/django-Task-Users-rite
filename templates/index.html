@@ -4,10 +4,17 @@
 {% endblock title%}
 
 {% block body%}
-    <h1 class="legend">Legends.net</h1>
+    
     <div class="users">
     <ol>
-        <h2>Users</h2>
+        <h1 class="user">
+            Xoşgəldin  
+            {% if user.is_authenticated %}
+                {{ user.username }}
+            {% else %}
+                User
+            {% endif %}
+        </h1>
         {%for user in users%}
         <li class="write">
             <h3>Müəllif : {{user.author}}</h3>

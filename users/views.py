@@ -5,3 +5,9 @@ from .models import Users
 def home_view(request):
     users=Users.objects.all()
     return render(request,'index.html',{'users':users})
+
+def about__view(request):
+    return render(request,'about.html')
+
+def contact__view(request):
+    return render(request,'contact.html')

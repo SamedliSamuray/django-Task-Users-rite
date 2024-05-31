@@ -7,7 +7,11 @@
 }
 body{
     background-color:darkslateblue;
-    padding: 10px;
+    
+}
+
+.container{
+    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -21,6 +25,7 @@ body{
 }
 .legend{
     color: goldenrod;
+    font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 1px 1px 5px whitesmoke;
 }
@@ -46,4 +51,67 @@ body{
 ol h2{
     color:darkgoldenrod;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgreen;
+    height: 80px;
+}
+a,i,a:visited,a:link{
+    color:goldenrod;
+    text-shadow: 1px 1px 3px whitesmoke;
+}
+.nav_links ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.message-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.message-box.success {
+    border-color: green;
+    color: green;
+}
+.message-box.error {
+    border-color: red;
+    color: red;
+}
+.user{
+    color: goldenrod;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 5px whitesmoke;
+    left: 500px;
+    width: 100%;
+}
+.img{
+    color: black;
+    font-size: 60px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+.btn{
+    background-color: goldenrod;
+    padding: 6px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }

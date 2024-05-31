@@ -7,3 +7,7 @@ paragraphs.forEach(paragraph => {
         paragraph.style.color = 'goldenrod'; 
     }
 });
+
+
+
+
